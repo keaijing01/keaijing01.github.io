@@ -1,0 +1,186 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>利用微搭低代码平台快速搭建问卷系统 | 可爱鲸低代码</title><meta name="author" content="可爱鲸低代码"><meta name="copyright" content="可爱鲸低代码"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="项目简介 利用微搭低代码平台搭建一个问卷小程序，主要实现微信支付和消息推送功能。 微信支付利用微搭自带的接口可以快速实现。 消息推送分为两种，利用小程序自带的服务通知和自己利用微搭的云函数来实现公众号推送。  微信支付首先可以新建微搭现有的微信支付API，但是要提前准备好认证的小程序和商户号，如下图所示。  认证和授权之后就可以完成API的创建，如下图所示。 然后在使用的时候就可以调用API接口，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="利用微搭低代码平台快速搭建问卷系统">
+<meta property="og:url" content="http://example.com/2023/07/22/%E5%88%A9%E7%94%A8%E5%BE%AE%E6%90%AD%E4%BD%8E%E4%BB%A3%E7%A0%81%E5%B9%B3%E5%8F%B0%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%97%AE%E5%8D%B7%E7%B3%BB%E7%BB%9F/index.html">
+<meta property="og:site_name" content="可爱鲸低代码">
+<meta property="og:description" content="项目简介 利用微搭低代码平台搭建一个问卷小程序，主要实现微信支付和消息推送功能。 微信支付利用微搭自带的接口可以快速实现。 消息推送分为两种，利用小程序自带的服务通知和自己利用微搭的云函数来实现公众号推送。  微信支付首先可以新建微搭现有的微信支付API，但是要提前准备好认证的小程序和商户号，如下图所示。  认证和授权之后就可以完成API的创建，如下图所示。 然后在使用的时候就可以调用API接口，">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/images/logo.png">
+<meta property="article:published_time" content="2023-07-22T05:00:00.000Z">
+<meta property="article:modified_time" content="2023-07-22T03:50:13.895Z">
+<meta property="article:author" content="可爱鲸低代码">
+<meta property="article:tag" content="低代码">
+<meta property="article:tag" content="微搭">
+<meta property="article:tag" content="项目">
+<meta property="article:tag" content="问卷">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/logo.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2023/07/22/%E5%88%A9%E7%94%A8%E5%BE%AE%E6%90%AD%E4%BD%8E%E4%BB%A3%E7%A0%81%E5%B9%B3%E5%8F%B0%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%97%AE%E5%8D%B7%E7%B3%BB%E7%BB%9F/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '利用微搭低代码平台快速搭建问卷系统',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-07-22 11:50:13'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/images/logo.png')"><nav id="nav"><span id="blog-info"><a href="/" title="可爱鲸低代码"><span class="site-name">可爱鲸低代码</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">利用微搭低代码平台快速搭建问卷系统</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-07-22T05:00:00.000Z" title="发表于 2023-07-22 13:00:00">2023-07-22</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-07-22T03:50:13.895Z" title="更新于 2023-07-22 11:50:13">2023-07-22</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%BE%AE%E6%90%AD/">微搭</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E4%BD%8E%E4%BB%A3%E7%A0%81/">低代码</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E9%97%AE%E5%8D%B7/">问卷</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E9%A1%B9%E7%9B%AE/">项目</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="利用微搭低代码平台快速搭建问卷系统"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="项目简介"><a href="#项目简介" class="headerlink" title="项目简介"></a>项目简介</h1><ul>
+<li>利用微搭低代码平台搭建一个问卷小程序，主要实现微信支付和消息推送功能。</li>
+<li>微信支付利用微搭自带的接口可以快速实现。</li>
+<li>消息推送分为两种，利用小程序自带的服务通知和自己利用微搭的云函数来实现公众号推送。</li>
+</ul>
+<h1 id="微信支付"><a href="#微信支付" class="headerlink" title="微信支付"></a>微信支付</h1><p>首先可以新建微搭现有的微信支付API，但是要提前准备好认证的小程序和商户号，如下图所示。<img src="/images%5Cimage-20230722093642693.png" alt="image-20230722093642693"></p>
+<p><img src="/images%5Cimage-20230722093512993.png"></p>
+<p>认证和授权之后就可以完成API的创建，如下图所示。<img src="/images%5Cimage-20230722093855856.png" alt="image-20230722093855856"></p>
+<p>然后在使用的时候就可以调用API接口，传入相关参数之后，就可以轻松完成微信支付功能。</p>
+<p><img src="/images%5Cimage-20230722094229236.png" alt="image-20230722094229236"></p>
+<h1 id="消息推送"><a href="#消息推送" class="headerlink" title="消息推送"></a>消息推送</h1><ul>
+<li><p>服务通知类型的消息推送。首先要在微信公众平台选择好要使用的推送模板。</p>
+<p><img src="/images%5Cimage-20230722094810760.png" alt="image-20230722094810760"></p>
+</li>
+</ul>
+<p>选用之后要创建一个消息的订阅，在适当的时候弹出订阅通知。</p>
+<p><img src="/images%5Cimage-20230722095408465.png" alt="image-20230722095408465"></p>
+<p><strong>要注意的是模板id要改成自己选择模板的对应id。</strong></p>
+<p>用户同意订阅之后，就可以在适当的时候（例如消息审核通过的时候）给用户推送服务通知。具体实现代码如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">const cloud = require(&#x27;wx-server-sdk&#x27;)</span><br><span class="line">cloud.init(&#123;</span><br><span class="line">  env: cloud.DYNAMIC_CURRENT_ENV,</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">module.exports = async function (params, context) &#123;</span><br><span class="line">  try &#123;</span><br><span class="line">    const result = await cloud.openapi(&#123;appid: context.env.currentAppId&#125;).subscribeMessage.send(&#123;</span><br><span class="line">        &quot;touser&quot;: context.env.currentOpenId,</span><br><span class="line">        &quot;page&quot;: &#x27;changePage&#x27;,</span><br><span class="line">        &quot;lang&quot;: &#x27;zh_CN&#x27;,</span><br><span class="line">        &quot;data&quot;: &#123;</span><br><span class="line">          &quot;thing1&quot;: &#123;</span><br><span class="line">            &quot;value&quot;: params.thing1</span><br><span class="line">          &#125;,</span><br><span class="line">          &quot;thing4&quot;: &#123;</span><br><span class="line">            &quot;value&quot;: params.thing4</span><br><span class="line">          &#125;,</span><br><span class="line">          &quot;time6&quot;: &#123;</span><br><span class="line">            &quot;value&quot;: params.time6</span><br><span class="line">          &#125;,</span><br><span class="line">          &quot;thing7&quot;: &#123;</span><br><span class="line">            &quot;value&quot;: params.thing7</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        &quot;templateId&quot;: params.templateId,</span><br><span class="line">        &quot;miniprogramState&quot;: &#x27;trial&#x27;</span><br><span class="line">      &#125;)</span><br><span class="line">    return result</span><br><span class="line">  &#125; catch (err) &#123;</span><br><span class="line">    return err</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>需要注意的是，选择的一次性模板每次都要用户先同意才可以发送消息通知，长期模板只需要用户同意一次就可以完成推送，但是长期模板目前只支持一些特定行业，大家可以酌情选择。</p>
+<ul>
+<li><p>公众号消息推送</p>
+<p>由于公众号和小程序的数据是两个部门的，我们要利用公众号推送消息的时候就要使用公众号的消息模板，具体推送方式也是有区别的，要获取的公众号的APPID和APPSECRET以及当前微搭的环境，然后可以根据微信官方的文档请求公众号的一些信息进行推送。</p>
+<p><img src="/images%5Cimage-20230722103602376.png" alt="image-20230722103602376"></p>
+</li>
+</ul>
+<p><img src="/images%5Cimage-20230722103641452.png" alt="image-20230722103641452"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br></pre></td><td class="code"><pre><span class="line">&#x27;use strict&#x27;;</span><br><span class="line"></span><br><span class="line">const axios = require(&#x27;axios&#x27;);</span><br><span class="line"></span><br><span class="line">const &#123; init &#125; = require(&quot;@cloudbase/node-sdk&quot;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">const app = init(&#123;</span><br><span class="line"></span><br><span class="line">  env: &quot;微搭环境&quot;</span><br><span class="line"></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">const db = app.database();</span><br><span class="line"></span><br><span class="line">const _ = db.command;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">exports.main = async (event, context) =&gt; &#123;</span><br><span class="line"></span><br><span class="line">  console.log(&quot;Hello World&quot;);</span><br><span class="line"></span><br><span class="line">  try &#123;</span><br><span class="line"></span><br><span class="line">​    const APPID = &quot;&quot;;</span><br><span class="line"></span><br><span class="line">​    const APPSECRET = &quot;&quot;;</span><br><span class="line"></span><br><span class="line">​    const tokenUrl = `https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&amp;appid=$&#123;APPID&#125;&amp;secret=$&#123;APPSECRET&#125;`;</span><br><span class="line"></span><br><span class="line">​    console.log(111, tokenUrl);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">​    const tokenResponse = await axios.get(tokenUrl);</span><br><span class="line"></span><br><span class="line">​    if (tokenResponse.status === 200) &#123;</span><br><span class="line"></span><br><span class="line">​      const tokenData = tokenResponse.data;</span><br><span class="line"></span><br><span class="line">​      console.log(222, tokenData);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">​      const ACCESS_TOKEN = tokenData.access_token;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">​      const userListUrl = `https://api.weixin.qq.com/cgi-bin/user/get?access_token=$&#123;ACCESS_TOKEN&#125;&amp;next_openid=`;</span><br><span class="line"></span><br><span class="line">​      const userListResponse = await axios.get(userListUrl);</span><br><span class="line"></span><br><span class="line">​      if (userListResponse.status === 200) &#123;</span><br><span class="line"></span><br><span class="line">​        const userListData = userListResponse.data;</span><br><span class="line"></span><br><span class="line">​        const total = userListData.total;</span><br><span class="line"></span><br><span class="line">​        const openidList = userListData.data.openid;</span><br><span class="line"></span><br><span class="line">​        const nextOpenid = userListData.next_openid;</span><br><span class="line"></span><br><span class="line">​        </span><br><span class="line"></span><br><span class="line">​        console.log(&quot;Total users:&quot;, total);</span><br><span class="line"></span><br><span class="line">​       // console.log(&quot;User IDs:&quot;, openidList);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">​        for (const openid of openidList) &#123;</span><br><span class="line"></span><br><span class="line">​          const requestData = &#123;</span><br><span class="line"></span><br><span class="line">​            &quot;touser&quot;: openid,</span><br><span class="line"></span><br><span class="line">​            &quot;template_id&quot;: &quot;模板id&quot;,</span><br><span class="line"></span><br><span class="line">​            &quot;miniprogram&quot;: &#123;</span><br><span class="line"></span><br><span class="line">​              &quot;appid&quot;: &quot;wx5883cb3b0cb51b6b&quot;,</span><br><span class="line"></span><br><span class="line">​              &quot;page&quot;: &quot;index&quot;</span><br><span class="line"></span><br><span class="line">​            &#125;,</span><br><span class="line"></span><br><span class="line">​            &quot;data&quot;: &#123;</span><br><span class="line"></span><br><span class="line">​              &quot;first&quot;: &#123;</span><br><span class="line"></span><br><span class="line">​                &quot;value&quot;: &quot;通知&quot;</span><br><span class="line"></span><br><span class="line">​              &#125;,</span><br><span class="line"></span><br><span class="line">​              &quot;keyword1&quot;: &#123;</span><br><span class="line"></span><br><span class="line">​                &quot;value&quot;: &quot;&quot;</span><br><span class="line"></span><br><span class="line">​              &#125;,</span><br><span class="line"></span><br><span class="line">​              &quot;keyword2&quot;: &#123;</span><br><span class="line"></span><br><span class="line">​                &quot;value&quot;: &quot;&quot;</span><br><span class="line"></span><br><span class="line">​              &#125;,</span><br><span class="line"></span><br><span class="line">​              &quot;keyword3&quot;: &#123;</span><br><span class="line"></span><br><span class="line">​                &quot;value&quot;: new Date().toLocaleDateString(&#x27;zh-CN&#x27;, &#123; year: &#x27;numeric&#x27;, month: &#x27;2-digit&#x27;, day: &#x27;2-digit&#x27; &#125;)</span><br><span class="line"></span><br><span class="line">​              &#125;,</span><br><span class="line"></span><br><span class="line">​              &quot;remark&quot;: &#123;</span><br><span class="line"></span><br><span class="line">​                &quot;value&quot;: &quot;&quot;</span><br><span class="line"></span><br><span class="line">​              &#125;</span><br><span class="line"></span><br><span class="line">​            &#125;</span><br><span class="line"></span><br><span class="line">​          &#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">​          const sendMessageUrl = `https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=$&#123;ACCESS_TOKEN&#125;`;</span><br><span class="line"></span><br><span class="line">​          const sendMessageResponse = await axios.post(sendMessageUrl, requestData);</span><br><span class="line"></span><br><span class="line">​           if (sendMessageResponse.status === 200) &#123;</span><br><span class="line"></span><br><span class="line">​             console.log(&quot;Message sent successfully!&quot;); </span><br><span class="line"></span><br><span class="line">​           &#125;</span><br><span class="line"></span><br><span class="line">​        &#125;</span><br><span class="line"></span><br><span class="line">​      &#125;</span><br><span class="line"></span><br><span class="line">​    &#125;</span><br><span class="line"></span><br><span class="line">  &#125; catch (error) &#123;</span><br><span class="line"></span><br><span class="line">​    console.log(444, error);</span><br><span class="line"></span><br><span class="line">​    return error;</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  return event;</span><br><span class="line"></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>以上信息有不熟悉的地方欢迎与我们可爱鲸联系。需要了解数字化信息，数字化转型也欢迎一起沟通交流。</p>
+<p>可爱鲸官网：<a target="_blank" rel="noopener" href="https://keaijing.com.cn/">https://keaijing.com.cn/</a></p>
+<pre><code>
+</code></pre>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E4%BD%8E%E4%BB%A3%E7%A0%81/">低代码</a><a class="post-meta__tags" href="/tags/%E5%BE%AE%E6%90%AD/">微搭</a><a class="post-meta__tags" href="/tags/%E9%A1%B9%E7%9B%AE/">项目</a><a class="post-meta__tags" href="/tags/%E9%97%AE%E5%8D%B7/">问卷</a></div><div class="post_share"><div class="social-share" data-image="/images/logo.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2023/07/11/%E5%BE%AE%E6%90%AD&amp;PDA%E6%89%93%E5%8D%B0/" title="微搭&amp;PDA蓝牙打印"><img class="cover" src="/images/weida.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">微搭&amp;PDA蓝牙打印</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2023/07/11/%E5%BE%AE%E6%90%AD&PDA%E6%89%93%E5%8D%B0/" title="微搭&amp;PDA蓝牙打印"><img class="cover" src="/images/weida.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-07-11</div><div class="title">微搭&amp;PDA蓝牙打印</div></div></a></div><div><a href="/2023/06/26/%E4%BD%95%E4%B8%BA%E4%BD%8E%E4%BB%A3%E7%A0%81/" title="何为低代码"><img class="cover" src="https://file.crazywong.com/gh/jerryc127/CDN@latest/cover/default_bg.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-06-26</div><div class="title">何为低代码</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">可爱鲸低代码</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E7%AE%80%E4%BB%8B"><span class="toc-number">1.</span> <span class="toc-text">项目简介</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98"><span class="toc-number">2.</span> <span class="toc-text">微信支付</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81"><span class="toc-number">3.</span> <span class="toc-text">消息推送</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/07/22/%E5%88%A9%E7%94%A8%E5%BE%AE%E6%90%AD%E4%BD%8E%E4%BB%A3%E7%A0%81%E5%B9%B3%E5%8F%B0%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%97%AE%E5%8D%B7%E7%B3%BB%E7%BB%9F/" title="利用微搭低代码平台快速搭建问卷系统"><img src="/images/logo.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="利用微搭低代码平台快速搭建问卷系统"/></a><div class="content"><a class="title" href="/2023/07/22/%E5%88%A9%E7%94%A8%E5%BE%AE%E6%90%AD%E4%BD%8E%E4%BB%A3%E7%A0%81%E5%B9%B3%E5%8F%B0%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%97%AE%E5%8D%B7%E7%B3%BB%E7%BB%9F/" title="利用微搭低代码平台快速搭建问卷系统">利用微搭低代码平台快速搭建问卷系统</a><time datetime="2023-07-22T05:00:00.000Z" title="发表于 2023-07-22 13:00:00">2023-07-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/07/11/%E5%BE%AE%E6%90%AD&amp;PDA%E6%89%93%E5%8D%B0/" title="微搭&amp;PDA蓝牙打印"><img src="/images/weida.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="微搭&amp;PDA蓝牙打印"/></a><div class="content"><a class="title" href="/2023/07/11/%E5%BE%AE%E6%90%AD&amp;PDA%E6%89%93%E5%8D%B0/" title="微搭&amp;PDA蓝牙打印">微搭&amp;PDA蓝牙打印</a><time datetime="2023-07-11T05:00:00.000Z" title="发表于 2023-07-11 13:00:00">2023-07-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/06/26/%E4%BD%95%E4%B8%BA%E4%BD%8E%E4%BB%A3%E7%A0%81/" title="何为低代码"><img src="https://file.crazywong.com/gh/jerryc127/CDN@latest/cover/default_bg.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="何为低代码"/></a><div class="content"><a class="title" href="/2023/06/26/%E4%BD%95%E4%B8%BA%E4%BD%8E%E4%BB%A3%E7%A0%81/" title="何为低代码">何为低代码</a><time datetime="2023-06-26T08:24:39.000Z" title="发表于 2023-06-26 16:24:39">2023-06-26</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By 可爱鲸低代码</div><div class="footer_custom_text"><a target="_blank" rel="noopener" href="https://keaijing.com.cn/">可爱鲸低代码官网</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
